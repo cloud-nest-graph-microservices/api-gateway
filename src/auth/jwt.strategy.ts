@@ -25,7 +25,6 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'key-cloak-jwt') {
   }
 
   async validate(payload: any) {
-    console.log("dddd");
-    return payload; // You can enrich this with user roles, etc.
+    return payload;
   }
 }
